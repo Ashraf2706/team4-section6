@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { AlertTriangle } from 'lucide-react';
 import Modal from '../UI/Modal';
 import Button from '../UI/Button';
-import { submitObstacleReport } from '../../services/feedbackService';
+import { submitObstacleReport } from '../../services/feedbackServices';
 
 const ReportObstacleModal = ({ isOpen, onClose }) => {
   const [formData, setFormData] = useState({

@@ -1,3 +1,4 @@
+import PopularLocations from './PopularLocations';
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Search, Navigation, Bike, AlertTriangle } from 'lucide-react';
@@ -37,7 +38,7 @@ const HomePage = () => {
       <div 
         className="relative h-[600px] bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.unsplash.com/photo-1562774053-701939374585?w=1600")',
+          backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://umbc.edu/wp-content/uploads/2020/09/Campus-Summer-ILSB19-4518_edit-scaled-e1600101974405-1024x532.jpg")',
         }}
       >
         <div className="absolute inset-0 flex flex-col items-center justify-center px-4">
@@ -87,7 +88,7 @@ const HomePage = () => {
       </div>
 
       {/* Popular Locations Section */}
-      <div className="bg-gray-50 py-16">
+      {/* <div className="bg-gray-50 py-16">
         <div className="max-w-7xl mx-auto px-4">
           <h2 className="text-3xl font-bold text-gray-900 mb-8">Popular Locations</h2>
           <p className="text-gray-600 mb-8">Quick access to frequently visited campus destinations</p>
@@ -101,7 +102,8 @@ const HomePage = () => {
             </button>
           </div>
         </div>
-      </div>
+      </div> */}
+      <PopularLocations/>
 
       {/* Search Modal */}
       <SearchModal 
