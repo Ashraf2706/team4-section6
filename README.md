@@ -143,7 +143,6 @@ team4-section6/
   - Recreation centers
   - Residential buildings
   - Administrative offices
-  - Parking areas
 - Geospatial indexing for proximity searches
 - Full-text search functionality
 - Department-based filtering
